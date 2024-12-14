@@ -1,0 +1,244 @@
+.logo-svg {
+    height: 150px;
+    width: 700px;
+    margin-bottom: 300px;
+}
+
+.kursii-design {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+    background-image: url('../images/kursi-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.kursii-design::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+}
+
+.content-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    z-index: 2;
+}
+
+.logo-and-text {
+    text-align: center;
+    color: #fff;
+}
+
+.header-text {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: #fff;
+    margin-top: -300px;
+}
+
+.sub-header-text {
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    color: #fff;
+    margin-top: 0;
+    line-height: 1.5;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.second-line {
+    display: inline-block;
+    margin-top: 0.5rem;
+    white-space: nowrap;
+}
+
+/* New styles for the bottom section */
+.bottom-section {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 125px;
+    background-color: #111111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+
+.action-button {
+    background-color: #eae8e8;
+    color: rgb(0, 0, 0);
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border: 1px solid transparent;
+    border-radius: 9999px;
+    transition: background-color 0.3s ease;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.icon-container {
+    position: absolute;
+    right: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+@media (max-width: 1024px) {
+    .kursii-design {
+        position: relative;
+        min-height: 100vh;
+        overflow-x: hidden;
+    }
+
+    .content-wrapper {
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+
+    .logo-svg {
+        height: 150px;
+        width: 700px;
+        margin-bottom: 300px;
+    }
+
+    .header-text {
+        font-size: 2rem;
+        margin-top: -200px;
+        text-align: center;
+        word-wrap: break-word;
+
+
+    }
+
+    
+
+    .bottom-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .action-button {
+        display: block;
+        margin: 0 auto;
+    }
+    
+
+    
+
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+    .kursii-design {
+        padding: 0;
+        margin: 0;
+    }
+
+    .content-wrapper {
+        padding: 0 10px;
+        justify-content: flex-start;
+        padding-top: 50px;
+    }
+
+    .logo-svg {
+        height: 150px;
+        width: 700px;
+        margin-bottom: 100px;
+        align-self: center;
+    }
+
+    .header-text {
+        
+        font-size: 1.5rem;
+        margin-top: 0;
+        line-height: 1.2;
+        text-align: center;
+        max-width: 90%;
+        padding-left: 20px;
+
+
+    }
+
+    .sub-header-text {
+        font-size: 0.85rem;
+        line-height: 1.4;
+        padding: 0 5px;
+        margin-top: 15px;
+        max-width: 90%;
+        text-align: center;
+    }
+
+    .bottom-section {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        padding: 10px 15px;
+        box-sizing: border-box;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .action-button {
+        width: 130px;
+        height: 45px;
+        margin: 0;
+        font-size: 1rem;
+        
+    }
+
+    .icon-container {
+        position: relative;
+        right: auto;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 10px;
+    }
+}
+
+/* Extra small mobile devices */
+@media (max-width: 375px) {
+    .header-text {
+        margin-left: 10px;
+        font-size: 1.3rem;
+        padding-left: 10px;
+
+    }
+
+    .sub-header-text {
+        font-size: 0.8rem;
+        
+    }
+}
+
+/* Ensure full viewport coverage and remove potential scrollbars */
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
